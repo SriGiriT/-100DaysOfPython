@@ -1,4 +1,5 @@
 import random
+import os
 
 hang = ["""
    +---+
@@ -60,6 +61,10 @@ print()
 print("Guess the word")
 while "_" in ans:
     inp = input()
+    if os.name == "nt":
+        os.system('cls')
+    else:
+        os.system('clear')
     if(inp in word and inp not in ans):
         print(hang[c])
         for i in range(len(word)):
