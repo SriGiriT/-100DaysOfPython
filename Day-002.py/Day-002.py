@@ -8,3 +8,4 @@ bill = float(input("What was the total bill? "))
 percentage = int(input("What percentage tip would like to give? 10, 12, or 15? "))
 total_persons = int(input("How many people to split the bill? "))
 print(f"Each person should pay: ${round((((bill * (percentage*0.01)) + bill) / total_persons), 2)}")
+ 
