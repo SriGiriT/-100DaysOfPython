@@ -32,7 +32,7 @@ if(rorl == "Left"):
         print("Go on")
         rby = input("Which door? ")
         if(rby == "Red"):
-            print("over")
+            print("over") 
         elif(rby == "Blue"):
             print("over")
         else:
