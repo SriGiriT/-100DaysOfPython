@@ -12,7 +12,7 @@ import random
 # print(sum_list)
 # print(sum_list/length)
 
-# Fizz Buzz
+# Fizz Buzz 
 # for i in range(1, 101):
 #     if i % 3 == 0 and i % 5 == 0:
 #         print("FizzBuzz", end=" ")
