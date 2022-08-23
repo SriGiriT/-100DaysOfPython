@@ -3,7 +3,7 @@ words = "abcdefghijklmnopqrstuvwxyz"
 
 
 def caesar(string_inp, move, direction):
-    ans = ""
+    ans = "" 
     if direction == "decode":
         move *= -1
     for i in range(len(string_inp)):
