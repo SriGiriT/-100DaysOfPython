@@ -69,7 +69,7 @@ isOn = True
 while isOn:
     choice = input("What would you like? (espresso/latte/cappuccino): ")
     if choice == "off":
-        isOn = False
+        isOn = False 
     elif choice == "report":
         print(f"water {resources['water']}ml")
         print(f"milk {resources['milk']}ml")
