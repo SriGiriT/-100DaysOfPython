@@ -16,7 +16,7 @@ coffee_maker = CoffeeMaker()
 is_on = True
 
 while is_on:
-    choice = input(f"What would you like? ({MENU.get_items()}): ")
+    choice = input(f"What would you like? ({MENU.get_items()}): ") 
     if choice == "off":
         is_on = False
     elif choice == "report":
