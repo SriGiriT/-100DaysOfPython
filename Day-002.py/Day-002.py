@@ -2,7 +2,7 @@
 # age = int(input("What is your current age : "))
 # print(f"You have {(90-age)*365} days, {(90-age)*52} weeks and {(90-age)*12} months left.")
 
-# Final challenge of Day-002
+# Final challenge of Day-002 
 print("Welcome to the tip calculator.")
 bill = float(input("What was the total bill? "))
 percentage = int(input("What percentage tip would like to give? 10, 12, or 15? "))
