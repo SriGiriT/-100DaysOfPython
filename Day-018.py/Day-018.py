@@ -53,11 +53,14 @@ def random_color():
 #   turtle.fd(30)
 
 
-# draw circles 
-turtle.speed(0)
-while True:
-  turtle.color(random_color)
-  
+# draw Spirograph
+# turtle.speed(0)
+# def draw_spirograph(size):
+#   for i in range(360 // size):
+#     turtle.color(random_color())
+#     turtle.setheading(turtle.heading()+size)
+#     turtle.circle(100)
 
 
-screen.exitonclick()
+# draw_spirograph(1)
+# screen.exitonclick()
