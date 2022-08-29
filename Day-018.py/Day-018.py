@@ -1,5 +1,6 @@
 from random import choice, randint
-from turtle import Turtle, Screen, colormode
+from turtle import Turtle, Screen, colormode, hideturtle
+# import colorgram
 
 turtle = Turtle()
 # turtle.shape("turtle")
@@ -42,7 +43,7 @@ def random_color():
   return (r, g, b)
 
 
-# colormode(255)
+colormode(255)
 # angles = [0, 90, 180, 270, 360]
 # colors = ["red", "orange", "brown", "yellow", "green", "blue", "purple", "black"]
 # turtle.pensize(15)
@@ -60,7 +61,49 @@ def random_color():
 #     turtle.color(random_color())
 #     turtle.setheading(turtle.heading()+size)
 #     turtle.circle(100)
-
-
 # draw_spirograph(1)
-# screen.exitonclick()
+
+# final challenge
+# colors = colorgram.extract('color.jpg', 30)
+# rgb_colors = []
+# for color in colors:
+#   rgb_colors.append((color.rgb.r, color.rgb.g, color.rgb.b))
+# print(rgb_colors)
+color = [(253, 251, 247), (254, 249, 252), (234, 251, 243), (197, 13, 32), (249, 237, 21), (39, 77, 188), (238, 227, 5), (39, 216, 68), (228, 160, 47), (243, 247, 253), (28, 40, 155), (214, 75, 14), (16, 153, 17), (199, 15, 11), (242, 34, 164), (226, 19, 120), (74, 9, 31), (60, 15, 8), (223, 141, 208), (11, 97, 62), (220, 160, 10), (18, 18, 43), (52, 211, 230), (11, 228, 239), (80, 73, 214), (238, 156, 217), (73, 212, 168), (81, 234, 202), (61, 233, 241), (5, 67, 42)]
+# My approach 
+# row = 0
+# col = 0
+# x = -250
+# y = -250
+# while row < 10:
+#   turtle.penup()
+#   turtle.goto(x, y)
+#   turtle.pendown()
+#   while col < 10:
+#     turtle.dot(20, choice(color))
+#     turtle.penup()
+#     turtle.fd(50)
+#     turtle.pendown()
+#     col += 1
+#   y += 50
+#   row += 1
+#   col = 0
+
+# Course approach
+turtle.penup()
+turtle.hideturtle()
+turtle.setheading(225)
+turtle.forward(300)
+turtle.setheading(0)
+number_of_dots = 100
+
+for dot in range(1, number_of_dots+1):
+  turtle.dot(20, choice(color))
+  turtle.fd(50)
+  if dot % 10 == 0:
+    turtle.setheading(90)
+    turtle.fd(50)
+    turtle.setheading(180)
+    turtle.fd(500)
+    turtle.setheading(0)
+screen.exitonclick()
