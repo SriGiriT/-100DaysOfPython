@@ -9,6 +9,7 @@ class Ball(Turtle):
     self.speed("fastest")
     self.x_move = 10
     self.y_move = 10
+    self.move_speed = 0.1
     self.goto(0, 0)
 
   def move(self):
@@ -18,10 +19,10 @@ class Ball(Turtle):
     self.y_move *= -1
 
   def x_bounce(self):
-    self.x_move += 5
-    self.y_move += 5
+    self.move_speed *= 0.9
     self.x_move *= -1
 
   def reset_position(self):
     self.goto(0,0)
+    self.move_speed = 0.1
     self.x_bounce()
