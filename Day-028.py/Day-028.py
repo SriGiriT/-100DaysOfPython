@@ -11,7 +11,7 @@ SEC = 60
 
 reps = 0
 timer = None
-
+# reset timer
 def reset():
   global reps
   reps = 0
