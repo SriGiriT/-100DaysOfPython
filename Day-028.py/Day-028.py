@@ -20,7 +20,7 @@ def reset():
   canvas.itemconfig(timer_text, text="00:00")
   sessions.config(text="")
 
-
+# start timer when start button get clicked 
 def start_timer():
   work_time_sec = WORK_MIN * SEC
   short_break_sec = SHORT_BREAK_MIN * SEC
