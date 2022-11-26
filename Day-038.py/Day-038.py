@@ -3,8 +3,8 @@ from datetime import datetime
 import os
 
 
-APP_ID = os.environ["YOUR_APP_ID"]
-API_KEY = os.environ["YOUR_API_KEY"]
+APP_ID = "16b0f0b6"
+API_KEY = "e3fe488268769aed54db6a9c28f39890"
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 sheet_endpoint = os.environ["YOUR_SHEET_ENDPOINT"]
